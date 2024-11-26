@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html For</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Name and Address</legend>
+        <label>Do you use CiviCRM?</label>
+        <span>
+          <label><input type="radio" name="choice" value="yes" />Yes</label>
+          <label><input type="radio" name="choice" value="no" /> No</label>
+          <label
+            ><input type="radio" name="choice" value="none" /> (Unselect)</label
+          >
+        </span>
+        <div>
+          <label for="duration">How long have you been using CiviCRM?</label>
+          <select id="duration" name="duration">
+            <option value="--select--">--select--</option>
+            <option value="less_than_1_year">Less than 1 year</option>
+            <option value="1_to_3_years">1-3 years</option>
+            <option value="3_to_5_years">3-5 years</option>
+            <option value="more_than_5_years">More than 5 years</option>
+          </select>
+        </div>
+        <div>
+          <label for="cms">Which CMS do you use?</label>
+          <select id="cms" name="cms">
+            <option value="--select--">--select--</option>
+            <option value="wordpress">WordPress</option>
+            <option value="joomla">Joomla</option>
+            <option value="drupal">Drupal</option>
+            <option value="magento">Magento</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="skill">Your skill set</label>
+          <select name="skill" id="skill">
+            <option value="--select--">--select--</option>
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="typescript">typescript</option>
+            <option value="next.js">next.js</option>
+            <option value="tailwindcss">tailwindcss</option>
+            <option value="shadcn ui">shadcn ui</option>
+            <option value="material ui">material ui</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Email*</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email address"
+          />
+        </div>
+        <div>
+          <label for="f-name">First Name*</label>
+          <input
+            type="text"
+            id="f-name"
+            name="f-name"
+            placeholder="Enter your first name"
+          />
+        </div>
+        <div>
+          <label for="l-name">Last Name*</label>
+          <input
+            type="text"
+            id="l-name"
+            name="l-name"
+            placeholder="Enter your last name"
+          />
+          <p>
+            First and last name will be shared with other visitors to the site
+          </p>
+        </div>
+        <div>
+          <label for="street">Street Address (Home)</label>
+          <input
+            type="text"
+            id="street"
+            name="street"
+            size="30"
+            placeholder="Enter your street"
+          />
+        </div>
+        <div>
+          <label for="city">City (Home)</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            size="20"
+            placeholder="Enter your city"
+          />
+        </div>
+        <div>
+          <label for="postal-code">Postal code (Home)</label>
+          <input
+            type="text"
+            id="postal-code"
+            name="city"
+            size="16"
+            placeholder="Enter your postal code"
+          />
+        </div>
+        <div>
+          <label for="country">Country (Home)</label>
+          <select name="country" id="country">
+            <option value="united-state">United-state</option>
+          </select>
+          <p>
+            Your state/province and country of residence will be shared with
+            others so folks can find others in their community.
+          </p>
+        </div>
+        <div>
+          <label for="state">State (Home)</label>
+          <select name="state" id="state">
+            <option value="select">--select--</option>
+          </select>
+        </div>
+      </fieldset>
+      <!-- Corrected div for buttons -->
+      <div>
+        <button type="submit">Save</button>
+        <button type="reset">Cancel</button>
+      </div>
+    </form>
+  </body>
+</html>
